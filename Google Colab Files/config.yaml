@@ -1,0 +1,8 @@
+path: "/content/gdrive/My Drive/Colab Notebooks/YOLO-train/main-dataset"
+
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: datamatrix

@@ -1,7 +1,64 @@
-# yolo-2d-datamatrix-train
+# YOLO 2D DataMatrix Train
 
+## Описание
 
+Этот репозиторий предназначен для обучения модели YOLO для распознавания двумерных кодов DataMatrix. Проект содержит скрипты на Python и ноутбуки Jupyter для подготовки данных, обучения модели и визуализации результатов.  
+Оригинальный датасет:  [kaggle](https://www.kaggle.com/datasets/coccodev/2d-data-matrix-code/data) 
 
-This repository was created to transform the dataset from [kaggle](https://www.kaggle.com/datasets/coccodev/2d-data-matrix-code/data) into a format suitable for YOLO training.
+## Состав репозитория
 
-Training was performed in Google Colab.
+- **Jupyter Notebook** (87.6%) — основные рабочие блокноты для исследования и обучения;
+- **Python** (12.4%) — вспомогательные скрипты для подготовки данных, аугментации и вывода результатов.
+
+## Основные возможности
+
+- Подготовка датасета для задач обнаружения DataMatrix-кодов
+- Скрипты для разметки изображений и преобразования аннотаций в формат YOLO
+- Обучение модели YOLO на собственном датасете
+- Визуализация предсказаний модели
+
+## Быстрый старт
+
+1. **Клонируйте репозиторий**:
+
+    ```bash
+    git clone https://github.com/tea-13/yolo-2d-datamatrix-train.git
+    cd yolo-2d-datamatrix-train
+    ```
+
+2. **Установите необходимые зависимости**:
+
+    Обычно используются Python-библиотеки, указанные в `requirements.txt` (при наличии):
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Запустите Jupyter Notebook**:
+
+    ```bash
+    jupyter notebook
+    ```
+
+    Откройте основной ноутбук для работы с моделями.
+
+## Структура проекта
+
+- `notebooks/` — Jupyter-ноутбуки для обучения и анализа
+- `scripts/` — Python-скрипты для подготовки данных и инференса
+- `data/` — пример структуры данных для обучения
+
+## Пример использования
+
+См. примеры в Jupyter-ноутбуках, чтобы узнать, как обучить и протестировать модель.
+
+## Требования
+
+- Python >=3.7
+- Jupyter Notebook
+- NumPy, OpenCV, TensorFlow/PyTorch (в зависимости от реализации YOLO)
+- Дополнительные библиотеки: указаны в `requirements.txt` или в теле ноутбуков
+
+## Лицензия
+
+[MIT](LICENSE)
